@@ -281,14 +281,18 @@ Navbar
 Header
 ================
  */
-
 .header {
   min-height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("/images/main-bcg.jpg") center/cover no-repeat fixed;
+  background: var(--clr-grey-1);
   position: relative;
   /* animation */
   overflow-x: hidden;
+}
+@media screen and (min-width: 768px) {
+  .header {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url("/images/main-bcg.jpg") center/cover no-repeat fixed;
+  }
 }
 .banner {
   text-align: center;
